@@ -1,0 +1,1207 @@
+=transform($value)
+	-webkit-transform: $value
+	-moz-transform: $value
+	-o-transform: $value
+	transform: $value
+=transform-origin($value)
+	-webkit-transform-origin: $value
+	-moz-transform-origin: $value
+	-ms-transform-origin: $value
+	-o-transform-origin: $value
+	transform-origin: $value
+=position($value)
+	-webkit-position: $value
+	position: $value
+=align-items($value)
+	-webkit-box-align: $value
+	-webkit-align-items: $value
+	-ms-flex-align: $value
+	align-items: $value
+=justify-content($value)
+	-webkit-justify-content: $value
+	-moz-justify-content: $value
+	justify-content: $value
+=flex-direction($value)
+	-webkit-flex-direction: $value
+	-moz-flex-direction: $value
+	flex-direction: $value
+=display-flex()
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+=transition($value)
+	-webkit-transition: $value
+	-moz-transition: $value
+	-o-transition: $value
+	transition: $value
+=background-size($value)
+	-webkit-background-size: $value
+	-o-background-size: $value
+	-moz-background-size: $value
+	background-size: $value
+=border-bottom-left-radius($value)
+	-webkit-border-bottom-left-radius: $value
+	-moz-border-bottom-left-radius: $value
+	border-bottom-left-radius: $value
+=border-bottom-right-radius($value)
+	-webkit-border-bottom-right-radius: $value
+	-moz-border-bottom-right-radius: $value
+	border-bottom-right-radius: $value
+=border-image($value)
+	-webkit-border-image: $value
+	-moz-border-image: $value
+	-o-border-image: $value
+	border-image: $value
+=flex-wrap($value)
+	-webkit-flex-wrap: $value
+	-moz-flex-wrap: $value
+	flex-wrap: $value
+/*----------------------------------------*/
+/*  1. Variable
+/*----------------------------------------*/
+$basecolor: #d05454
+$icon: 'Font Awesome 5 Pro'
+$font-family: 'Lato', sans-serif
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
+
+.row:before
+	display: none !important
+.row:after
+	display: none !important
+/*----------------------------------------*/
+/*  Header
+/*----------------------------------------*/
+*
+	font-size: 14px
+	font-family: $font-family
+	// overflow-x: hidden
+.site-index
+	overflow-x: hidden
+a
+	&:hover
+		text-decoration: none
+img
+	width: 100%
+	height: 100%
+	object-fit: cover
+.banner
+	width: 100%
+	height: 500px
+	background-repeat: no-repeat !important
+	background-position: center bottom !important
+	background-size: cover !important
+	position: relative
+	background: deepskyblue
+	background: linear-gradient(142deg, deepskyblue 0%, #7448f1 100%)
+	.item-center
+		text-align: center
+		justify-content: flex-end
+		padding-bottom: 4rem
+		.title
+			color: #fff
+			a
+				color: $basecolor
+.overlay
+	position: absolute
+	top: 0%
+	width: 100%
+	height: 100%
+	background-color: #00000038
+	color: #fff
+.item-center
+	width: 100%
+	height: 100%
+	vertical-align: middle
+	display: flex
+	flex-direction: column
+	justify-content: center
+::-moz-selection
+	color: #fff
+	background: $basecolor
+
+
+::selection 
+	color: #fff
+	background: $basecolor
+
+.gm-style-iw ,.gm-style-iw-c,.gm-style ,.gm-style-iw-c
+	padding: 0px !important
+	border-radius: 0px !important
+	// min-width: 320px !important
+.gm-style ,.gm-style-iw-d
+	overflow: initial !important
+	padding: 0px 15px 0px 0px!important
+	img
+		margin: 0px !important
+		margin-right: 10px !important
+.owl-nav
+	position: absolute
+	top: -50px
+	right: 0px
+	.owl-next
+		outline: none
+		span
+			background: #fff
+			border-radius: 100%
+			color: #000
+			display: block
+			font-size: 20px
+			width: 34px
+			height: 34px
+			margin: 0px 3px
+			box-shadow: 0px 0px 10px #0000002e
+	.owl-prev
+		outline: none
+		span
+			background: #fff
+			border-radius: 100%
+			color: #000
+			display: block
+			font-size: 20px
+			width: 34px
+			height: 34px
+			margin: 0px 3px
+			box-shadow: 0px 0px 10px #0000002e
+.menu_mobile
+	display: none
+	top: 0px
+	width: 100%
+	height: 100vh
+	background: $basecolor
+	// background: deepskyblue
+	// background: linear-gradient(142deg, deepskyblue 0%, #7448f1 100%)
+	position: fixed
+	z-index: 99
+	text-align: center
+	backdrop-filter: blur(30px)
+	padding: 4rem 2rem
+	.desktop-nav
+		ul
+			padding: 0px
+			margin: 0px
+			list-style: none
+			text-align: left
+			li
+				padding: 8px 0px
+				a
+					color: #fff
+					font-weight: 500
+					font-size: 20px
+	.contact_info
+		color: #fff
+		text-align: left
+		justify-content: flex-end
+		display: flex
+		flex-direction: column
+		vertical-align: middle
+		height: 200px
+		h4
+			margin-bottom: 1rem
+			
+		ul
+			list-style: none
+			padding: 0px
+			margin: 0px
+			li
+				a
+					color: #fff
+					&:hover
+						color: $basecolor
+		.social_media
+			padding: 1rem 0px
+			a
+				padding-right: 10px
+				i
+					color: #fff !important
+	.close_menu
+		position: absolute
+		top: 15px
+		right: 35px
+		padding: 10px 17px
+		// background: red
+		border-radius: 35px
+		text-align: center
+		cursor: pointer
+		// box-shadow: 0px 6px 8px #00000054
+		transition: .3s
+		&:hover
+			top: 16px
+		i
+			color: #fff !important
+			font-size: 30px
+.hidden
+	overflow: hidden
+.header
+	position: fixed
+	top: 0px
+	width: 100%
+	z-index: 20
+	box-shadow: 0px 5px 5px #00000012
+	.main_header
+		background: #fff
+		padding: 20px 0px
+		.main_header_left
+			display: inline-block
+			padding-left: 1.2rem
+		.main_header_right
+			text-align: right
+			padding: 0px 0px
+			ul
+				padding: 0px
+				margin: 0px
+				list-style: none
+				display: inline-flex
+				li
+					padding: 0px 10px
+					display: flex
+					vertical-align: middle
+					flex-direction: column
+					justify-content: center
+					a
+						color: black
+						font-family: $font-family
+						font-weight: 400
+						text-decoration: none
+						font-size: 14px
+						&:hover
+							color: $basecolor
+.active_menu
+	color: $basecolor!important
+/*----------------------------------------*/
+/*  Front Page
+/*----------------------------------------*/
+.slider_home
+	width: 100%
+	height: 100vh
+	position: relative
+	.fiiter
+		position: absolute
+		top: 50%
+		left: 0px
+		width: 100%
+		transform: translate(0%,-50%)
+		.title_banner
+			color: #fff
+			span
+				color: $basecolor
+				font-size: 12px
+			h3
+				font-size: 40px
+				margin: 0px 0px 1rem
+				font-weight: 400
+			p
+				font-size: 16px
+		.from_fitter
+			border-radius: 0px
+			// overflow: hidden
+			// background: #fff
+			.select_form
+				margin: 0px 1px
+				.form-control
+					padding: 2.34rem 1rem
+					font-size: 14px
+					border-radius: 0px
+					width: 100%
+					border: 1px solid #d4d4d4
+				.custom-select
+					width: 100%
+					padding: 1.2rem 1rem
+					height: auto
+					font-size: 14px
+					border: none
+					border-radius: 0px
+					
+			.btn_search
+				height: initial
+				width: 100%
+				text-align: center
+				border: 1px solid $basecolor
+				background: $basecolor
+				color: #fff
+				padding: 12.5px
+.list_type
+	position: relative
+	.title
+		padding: 27px 0px 20px
+	a
+		color: #000 !important
+		&:hover
+			text-decoration: none !important
+		.item
+			background: #fff
+			// border: 1px solid #e4e4e4
+			border-radius: 5px
+			overflow: hidden
+			margin: 5px
+			box-shadow: 0px 5px 20px #80808024
+			.image
+				img
+					height: 200px
+			.name
+				padding: 1rem 2rem
+	.more
+		padding: 4rem 0px 0px
+		a
+			color: $basecolor !important
+			i
+				padding-left: 5px
+	div#type_on_scroll
+		position: absolute
+		bottom: 117%
+.discount
+	position: absolute
+	background: #ff00009c
+	padding: 8px 10px 7px
+	bottom: 34%
+	margin: 5px 10px
+	p
+		color: white
+.villa_list
+	padding: 2rem 0px
+	.title
+		margin-bottom: 2rem
+	.slider_villa
+		// position: relative
+		overflow-x: initial
+		a
+			color: #000 !important
+			&:hover
+				text-decoration: none !important
+			.item
+				background: #fff
+				margin: 5px
+				.image
+					border-radius: 5px
+					overflow: hidden
+					position: relative
+					img
+						height: 165px
+					.icon
+						position: absolute
+						top: 7px
+						right: 20px
+						padding: 10px
+						i
+							color: #fff
+							font-size: 20px
+				.name
+					padding: 1rem 0rem
+					h2
+						color: $basecolor
+						font-size: 17px
+					p
+						// color: gray
+						font-size: 11px
+						margin: 0px
+						i
+							padding-right: 5px
+					span
+							color: #000
+							font-size: 14px
+	.image
+		img 
+			border-radius: 5px
+			height: 200px
+			width: 100%
+			object-fit: cover
+			position: relative
+	.discount
+		position: absolute
+		background: #ff00009c
+		padding: 8px 10px 7px
+		bottom: 39%
+		margin: 5px 10px
+		p
+			color: white
+			
+	.more
+		a
+			color: $basecolor !important
+			i
+				padding-left: 5px
+.contact_us
+	padding: 19rem 0px
+	background-position: center !important
+	background-size: cover !important
+	background-repeat: no-repeat !important
+	.content
+		color: #fff
+		p
+			font-weight: 300
+		h1
+			font-size: 30px
+			font-weight: 300
+		h2
+			margin-bottom: 2rem
+			font-weight: 300
+		.btn_contact
+			color: #fff
+			padding: 10px 30px
+			background: $basecolor
+			text-decoration: none
+			border-radius: 5px
+			display: inline-block
+.blog_post
+	position: relative
+	.title
+		margin-bottom: 2rem
+	a
+		color: #000
+		text-decoration: none
+		&:hover
+			text-decoration: none !important
+			color: #000 !important
+			.item
+				.image
+					img
+						transform: scale(1.1)
+		.item
+			background: #fff
+			border: 1px solid #e4e4e4
+			border-radius: 5px
+			margin-bottom: 1rem
+			.image
+				overflow: hidden
+				img
+					height: 200px
+					transition: .3s
+			.name
+				padding: 1rem 2rem
+				span
+					font-size: 10px
+					color: gray
+				p
+					color: gray
+/*----------------------------------------*/
+/*  Page Accommodation
+/*----------------------------------------*/
+.page_accommodation_type
+	padding: 14rem 0px 4rem 
+	.title
+		margin-bottom: 2rem
+		span
+			font-size: 12px
+			color: gray
+	.fiiter
+		width: 100%
+		margin-bottom: 2rem
+		.from_fitter
+			border-radius: 5px
+			// overflow: hidden
+			// border: 1px solid #8080804f
+			.select_form
+				margin: 0px 1px
+				.form-control
+					padding: 2.29rem 1rem
+					font-size: 14px
+					border-radius: 0px
+					border: none
+					width: 100%
+					border: 1px solid #80808073
+				.custom-select
+					width: 100%
+					padding: 1.2rem 1rem
+					height: auto
+					font-size: 14px
+					border: none
+					border-radius: 0px
+					border: 1px solid #80808073
+			.btn_search
+				height: 100%
+				width: 100%
+				text-align: center
+				border: 1px solid $basecolor
+				background: $basecolor
+				color: #fff
+				padding: 10px
+	a
+		color: #000 !important
+		&:hover
+			text-decoration: none !important
+		.item
+			background: #fff
+			margin: 5px
+			.image
+				border-radius: 5px
+				overflow: hidden
+				img
+					height: 200px
+				.icon
+					position: absolute
+					top: 7px
+					right: 20px
+					padding: 10px
+					i
+						color: #fff
+						font-size: 20px
+				.dis
+					position: absolute
+					top: 10px
+					left: 0px
+					padding: 5px 20px
+					background: $basecolor
+					span
+						color: #fff
+			.name
+				padding: 1rem 0rem
+				h2
+					color: $basecolor
+					font-size: 17px
+				p
+					// color: gray
+					font-size: 11px
+					margin: 0px
+					i
+						padding-right: 5px
+					span
+						color: #000
+						font-size: 14px
+/*----------------------------------------*/
+/*  Page Contact us
+/*----------------------------------------*/
+.page_contact_us
+	padding: 4rem 0px
+	.form-control
+		font-size: 14px
+		padding: 10px
+		&:focus
+			border-color: $basecolor
+			outline: 0
+			box-shadow: none
+	.title
+		margin-bottom: 1rem
+	.contact_info
+		margin-top: 2rem
+		padding: 2rem
+		border: 3px double gray
+		background: #f3f3f366
+	.btn_send
+		background: $basecolor
+		color: #fff
+		border: none
+		padding: 10px 40px
+		border-radius: 5px
+/*----------------------------------------*/
+/*  Page about us
+/*----------------------------------------*/
+.page_about
+	padding: 4rem 0px
+	.our_villa,.our_story
+		padding: 2rem 0px
+		.image
+			img
+				height: 350px
+.our_values
+	padding: 4rem 0px
+	background: #f3f3f3
+	.title
+		margin-bottom: 2rem
+		h1
+			font-size: 30px
+	.item
+		padding: 1rem
+		background: #fff
+		text-align: center
+		border-radius: 5px
+		min-height: 200px
+		margin: 5px
+		.icon
+			margin: 1rem 0px
+			img
+				width: 60px
+		.title
+			margin-bottom: 1rem
+		.short_detial
+			p
+				color: gray
+/*----------------------------------------*/
+/*  Single Accommodation
+/*----------------------------------------*/
+.book_on_mobile
+	display: none
+	position: fixed
+	bottom: 0px
+	width: 100%
+	background: #fff
+	z-index: 3
+	box-shadow: 0px -6px 6px #80808047
+	padding: 3rem 0px 1.5rem
+	.price
+		font-size: 12px
+		span
+			color: green
+			font-size: 20px
+	p
+		text-align: center
+		a
+			padding: 10px 20px
+			background: red
+			color: #fff !important
+			border-radius: 5px
+.single_acc_type
+	padding-top: 10rem
+	.title
+		margin-bottom: 2rem
+		a
+			color: $basecolor
+			margin-right: 10px
+			i
+				padding-right: 5px
+		ul
+			list-style: none
+			padding: 0px
+			margin: 1rem 0px 0px
+			li
+				display: initial
+				padding: 5px 20px
+				border: 1px solid gray
+				cursor: pointer
+				border-radius: 35px
+				img
+					width: 20px
+	.image_group
+		border-radius: 10px
+		overflow: hidden
+		position: relative
+		.big_img
+			margin-right: 0px
+			img
+				height: 400px
+		.small_image
+			margin-left: 5px
+			margin-bottom: 5px
+			img
+				height: 197.5px
+		.small_image_bottom
+			margin-left: 5px
+			img
+				height: 197.5px
+		.btn_gallery
+			padding: 5px 30px
+			color: #ffffff
+			position: absolute
+			bottom: 20px
+			left: 30px
+			background: #00000082
+			border-radius: 5px
+			border: 1px solid #fff
+			text-decoration: none
+	.title_single
+		padding: 0rem 0px
+		text-align: center
+		position: relative
+		margin: 1rem 0px
+		.line
+			position: absolute
+			top: 50%
+			left: 0
+			width: 100%
+			margin: 0
+			border-bottom: 1px solid #eaeaea
+		.b_title
+			position: relative
+			background-color: #fff
+			padding-left: 24px
+			padding-right: 24px
+			display: inline-block
+	.our_detail
+		padding: 4rem 0px
+		.description
+			p
+				color: gray
+		#allotment_scroll
+			position: absolute
+			bottom: 67%
+	// .breaking_price
+	// 	td
+	// 		width: 20%
+	.sleeping_arrangements
+		.item
+			padding: 1rem 2rem
+			border: 1px solid gray
+			border-radius: 10px
+			margin: 5px
+			.icon
+				margin-bottom: 1rem
+				img
+					width: 30px
+			p
+				margin: 0px
+				color: gray
+	.service
+		ul
+			list-style: none
+			padding: 0px
+			margin: 0px
+			column-count: 2
+			li
+				color: gray
+				&::before
+					content: '\f00c'
+					font: normal normal normal 14px/1 FontAwesome
+					color: $basecolor
+					padding-right: 5px
+	.sidebar,
+		position: sticky
+		top: 14rem
+		padding: 3rem
+		background: #fff
+		box-shadow: 0px 0px 10px #80808026
+		overflow: hidden
+		border-radius: 5px
+		.btn_book_mobile
+			display: none
+			position: absolute
+			right: 19px
+			padding: 10px 5px
+			border-radius: 35px
+			background: #dc3545
+			box-shadow: 0px 0px 10px #8080804f
+			top: 10px
+			i
+				color: #fff
+		.price
+			p
+				// margin-bottom: 3rem
+				font-size: 16px
+				span
+					color: $basecolor
+					font-weight: 500
+					font-size: 30px
+			.btn_book_mobile
+				float: right
+				padding: 5px 30px
+				background: #7bb98f
+				color: #fff
+				border-radius: 5px
+				margin-top: 1rem
+			.booking
+				border-radius: 5px
+				border: 1px solid #80808047
+				overflow: hidden
+				.form-control
+					padding: 2rem 1rem
+					font-size: 14px
+					color: gray
+					border: 1px solid #80808047
+					border-radius: 0px
+					box-shadow: none
+				.custom-select
+					width: 100%
+					padding: 1.2rem 1rem
+					height: auto
+					font-size: 14px
+					border: none
+					border-radius: 0px
+					border: 1px solid #80808047
+					color: gray
+			.info
+				margin-top: 2rem
+				.form-control
+					padding: 2rem 1rem
+					font-size: 14px
+					color: black
+					border: none
+					border-bottom: 1px solid #80808047
+					border-radius: 0px
+					box-shadow: none
+				.btn_search
+					background: green
+					padding: 10px
+					text-align: center
+					width: 100%
+					margin-top: 1rem
+					border: 1px solid green
+					border-radius: 5px
+					color: #fff
+.popup_booking
+	position: fixed
+	top: 0px
+	height: 100vh
+	width: 100%
+	padding: 3rem
+	background: #fff
+	z-index: 99
+	display: none
+	.btn_book_mobile
+		position: absolute
+		right: 19px
+		padding: 10px 15px
+		border-radius: 35px
+		background: #dc3545
+		box-shadow: 0px 0px 10px #8080804f
+		i
+			color: #fff
+	.price
+		p
+			margin-bottom: 3rem
+			font-size: 16px
+			span
+				color: $basecolor
+				font-weight: 500
+				font-size: 30px
+		.btn_book_mobile
+			float: right
+			padding: 5px 30px
+			background: #7bb98f
+			color: #fff
+			border-radius: 5px
+			margin-top: 1rem
+		.booking
+			border-radius: 5px
+			border: 1px solid #80808047
+			overflow: hidden
+			.form-control
+				padding: 2rem 1rem
+				font-size: 14px
+				color: gray
+				border: 1px solid #80808047
+				border-radius: 0px
+			.custom-select
+				width: 100%
+				padding: 1.2rem 1rem
+				height: auto
+				font-size: 14px
+				border: none
+				border-radius: 0px
+				border: 1px solid #80808047
+				color: gray
+		.info
+			margin-top: 2rem
+			.form-control
+				padding: 2rem 1rem
+				font-size: 14px
+				color: #80808073
+				border: none
+				border-bottom: 1px solid #80808047
+				border-radius: 0px
+				box-shadow: none
+			.btn_search
+				background: green
+				padding: 10px
+				text-align: center
+				width: 100%
+				margin-top: 1rem
+				border: 1px solid green
+				border-radius: 5px
+				color: #fff
+.relate
+	padding: 0rem 0px 4rem 
+	.title
+		margin-bottom: 2rem
+		span
+			font-size: 12px
+			color: gray
+	a
+		color: #000 !important
+		&:hover
+			text-decoration: none !important
+		.item
+			background: #fff
+			margin: 5px
+			.image
+				border-radius: 5px
+				overflow: hidden
+				img
+					height: 165px
+				.icon
+					position: absolute
+					top: 7px
+					right: 20px
+					padding: 10px
+					i
+						color: #fff
+						font-size: 20px
+				.dis
+					position: absolute
+					top: 10px
+					left: 0px
+					padding: 5px 20px
+					background: $basecolor
+					span
+						color: #fff
+			.name
+				padding: 1rem 0rem
+				h2
+					color: $basecolor
+					font-size: 17px
+				p
+					color: gray
+					font-size: 11px
+					margin: 0px
+					i
+						padding-right: 5px
+					span
+						color: #000
+						font-size: 14px
+/*----------------------------------------*/
+/*  Page News
+/*----------------------------------------*/
+.page_news
+	padding: 4rem 0px
+/*----------------------------------------*/
+/*  Page Privacy
+/*----------------------------------------*/
+.page_privacy,.term_condition
+	padding: 14rem 0px 4rem
+/*----------------------------------------*/
+/*  Single Page | Service, Experience
+/*----------------------------------------*/
+
+.feature_image
+	a
+		img
+			cursor: crosshair
+/*----------------------------------------*/
+/*  Single Post
+/*----------------------------------------*/
+.single_post
+	padding: 14rem 0px 4rem
+	position: relative
+	.title
+		h1
+			font-size: 40px
+			font-weight: 600
+			margin-bottom: 2rem
+		p
+			margin: 0px
+			font-size: 12px
+			color: gray
+		ul
+			padding: 0px
+			margin: 2rem 0px 2rem
+			list-style: none
+			display: inline-flex
+			li
+				margin-right: 5px 
+				a
+					padding: 5px
+					color: $basecolor
+	.feature_image
+		overflow: hidden
+		border-radius: 5px
+		&:hover
+			img
+				transform: scale(1.1)
+		img
+			height: 450px
+			transition: .3s
+	.content
+		padding: 2rem 0px
+		p
+			font-size: 16px
+			font-weight: 400
+			color: gray
+/*----------------------------------------*/
+/*  Page Gallery
+/*----------------------------------------*/
+.page_gallery
+	padding: 4rem 0px
+	.nav
+		margin: 0px
+		.nav-item
+			padding: 0px 0px 15px
+			text-align: center
+			.nav-link
+				margin-right: 6px
+				color: #666
+				text-decoration: none
+				padding: 10px 30px
+				display: inline-block
+				transition: 0.3s
+				border: none
+				&:hover
+					background: $basecolor
+					color: #fff
+			.active
+				background: $basecolor
+				color: #fff
+	.image
+		position: relative
+		overflow: hidden
+		margin: 5px
+		border-radius: 4px
+		a
+			&:after
+				content: ''
+				// font-family: "Font Awesome 5 Pro"
+				position: absolute
+				font-size: 30px
+				color: #e0c471
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				background: #00000099
+				width: 100%
+				height: 100%
+				vertical-align: middle
+				display: flex
+				opacity: 0
+				justify-content: center
+				flex-direction: column
+				transition: .3s
+				text-align: center
+			&:hover
+				&:after
+					opacity: 1
+				img
+					transform: scale(1.1)
+		img 
+			width: 100%
+			object-fit: cover
+			height: 200px
+			transition: 0.5s
+			z-index: 1
+/*----------------------------------------*/
+/*  Booking Form
+/*----------------------------------------*/
+.detail
+	padding: 20px 20px
+	background: #80808057
+.check
+	background: #d4d4d4
+	padding: 10px
+
+.check_date 
+	padding: 10px
+	margin: 30px 0px
+	background: #ff00003d
+	border: 1px solid red
+	text-align: center
+/*----------------------------------------*/
+/*  Footer
+/*----------------------------------------*/
+.footer
+	padding: 4rem 0px
+	background: $basecolor
+	.address
+		color: #fff
+	.contact_info,.about_us,.type
+		color: #fff
+		padding: 15px 0px
+		h2
+			margin-bottom: 2rem
+		ul
+			padding: 0px
+			margin: 0px
+			list-style: none
+			li
+				padding: 5px 0px
+				a
+					color: #fff
+.footer_bottom
+	padding: 20px 0px
+	p
+		margin: 0px
+		a
+			color: $basecolor
+/*----------------------------------------*/
+/*  End. Responsive
+/*----------------------------------------*/
+
+// ======= 1.  Page About Us========
+@media (max-width:1024px)
+	.page_accommodation_type a .item .image img
+		height: 300px
+	.villa_list a .item .image img
+		height: 300px
+// ======= 1.  Page About Us========
+@media (max-width:990px)
+	.page_accommodation_type a .item .image img
+		height: 230px
+	.villa_list a .item .image img
+		height: 230px
+	.list_type a .item .image img
+		height: 130px
+// ======= 1. header ========
+@media (max-width:812px)
+	div#map_on_scroll
+		position: absolute
+		top: 92%
+	div
+		#type_on_scroll
+			position: absolute
+			top: 0%
+	.breaking_price
+		.row
+			.col-md-6
+				border-right: none !important
+	.header
+		position: absolute
+		.main_header
+			.main_header_left
+				img
+					width: 170px !important
+			.main_header_right
+				display: none
+			.icon_mobile
+				display: block !important
+				text-align: right
+				padding: 13px 30px
+				display: block !important
+				text-align: right
+				position: absolute
+				left: 60%
+				bottom: 0%
+				padding-bottom: 9px
+				i
+					font-size: 26px
+					color: #000
+	.slider_home .fiiter .from_fitter .select_form
+		margin: 5px 0px
+	.menu_mobile
+		width: 40%
+	.our_story,.our_villa
+		.image
+			display: none
+	.single_acc_type .image_group .small_image
+		display: none
+	.single_acc_type .image_group .small_image_bottom
+		display: none
+	.single_acc_type .service ul
+		column-count: 1
+// ======= 1. Archive Page ========
+@media (max-width:500px)
+	.footer_bottom
+		p 
+			text-align: center !important
+	.villa_list .slider_villa a .item .image img
+		height: 200px
+	.menu_mobile
+		width: 100%
+	.page_accommodation_type a .item .image img,.relate a .item .image img
+		height: 240px
+	.list_type a .item .image img
+		height: 220px
+	.single_post .feature_image img
+		height: 245px
+	.single_acc_type .title
+		display: grid
+	.single_acc_type .title ul li
+		display: inline-block
+		margin: 5px 0px
+	.single_acc_type .image_group .big_img img
+		height: 250px
+	.sidebar
+		display: none
+		position: fixed !important
+		bottom: 0px
+		// left: 250px
+		margin: 15px 0px 0px
+		margin-right: 15px
+		z-index: 44
+		top: 0px !important
+		box-shadow: 0px 0px 10px #808080a3 !important
+		overflow-y: scroll !important
+		height: 100%
+		.btn_book_mobile
+			display: block !important
+	.single_acc_type .sidebar .price p
+		display: inline-table
+	.single_acc_type .sidebar .price .btn_book_mobile
+		display: block !important
+	.book_on_mobile
+		display: block
+	
+	
