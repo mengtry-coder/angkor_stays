@@ -14,7 +14,6 @@ $f_from_date = date('Y-m-d');
 $f_to_date = date('Y-m-d', strtotime(date("Y-m-d"). ' + 1 days'));
 $guest = 5;
 ?>
-xsdf
 <div class="site-index">
     <div class="slider_home">
         <img src="<?= CustomField::findOne(1)->feature_image; ?>" alt="">
